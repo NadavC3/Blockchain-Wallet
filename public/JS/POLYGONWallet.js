@@ -59,7 +59,7 @@ function generateAddresses(seedPhrase) {
                     html += "<li>";
                     html += "<p><b>Address: </b>0x" + address + "</p>";
                     html += "<p><b>Private Key: </b>0x" + privateKey + "</p>";
-                    html += "<p><b>Balance: </b>" + web3.fromWei(balance, "ether") + " ether</p>";
+                    html += "<p><b>Balance: </b>" + web3.fromWei(balance, "ether") + " MATIC</p>";
                     html += "</li>";
                 }
 

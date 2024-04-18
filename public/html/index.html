@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiCurrency HD wallet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .logo {
+            max-width: 200px; /* Adjust the width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">MultiCurrency HD wallet</h1><br>
+        <!-- Image -->
+        <div class="text-center mb-4">
+            <img src="/Images/ETH-logo.png" alt="Ethereum Logo" class="logo">
+        </div>
+        <div class="form-group">
+            <label for="seed">Seed Phrase:</label>
+            <input type="text" class="form-control" id="seed">
+        </div>
+        <div class="text-center mb-4">
+            <button class="btn btn-primary mr-2" onclick="createSeed()">Generate Seed</button>
+            <button class="btn btn-primary" onclick="generateAddresses()">Generate Addresses</button>
+        </div>
+        <ul id="list" class="list-group mb-4"></ul>
+        <hr>
+        <h2 class="text-center mb-4">Send Transaction</h2>
+        <div class="form-group">
+            <label for="fromAddress">From Address:</label>
+            <input type="text" class="form-control" id="fromAddress">
+        </div>
+        <div class="form-group">
+            <label for="toAddress">To Address:</label>
+            <input type="text" class="form-control" id="toAddress">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount (ETH):</label>
+            <input type="text" class="form-control" id="amount">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="sendTransaction()">Send Transaction</button>
+        </div>
+        <!-- Link to Bitcoin page -->
+        <div class="text-center mt-4">
+            <a href="/html/index2.html" class="btn btn-secondary">Go to Polygon Page</a>
+        </div>
+    </div>
+    <!-- Bootstrap JS (optional if you need JavaScript features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="/js/web3.min.js"></script>
+    <script src="/js/hooked-web3-provider.min.js"></script>
+    <script src="/js/lightwallet.min.js"></script>
+    <script src="/JS/ETHWallet.js"></script>
+</body>
+</html>
