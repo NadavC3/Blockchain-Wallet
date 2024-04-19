@@ -127,7 +127,7 @@ function sendTransaction() {
                     transaction_signer: keystore
                 });
 
-                var web3 = new web3(provider);
+                var web3 = new Web3(provider);
 
                 // Retrieve sender and recipient addresses, and ether value
                 var from = document.getElementById("fromAddress").value;
@@ -141,7 +141,7 @@ function sendTransaction() {
                     gasLimit: '0xC350',
                     gasPrice: '80000000000',
                     value: value,
-                    gas: '20000' // Changed gas value
+                    gas: '21000' // Changed gas value
                 }, function (error, result) {
                     if (error) {
                         displayMessage("Error: " + error);
@@ -153,8 +153,6 @@ function sendTransaction() {
         });
     });
 }
-// get sepolia here
-//https://cloud.google.com/application/web3/faucet/ethereum/sepolia
 
 //
 //garlic fiction spare witness toy burger cry ability trash prize fine later

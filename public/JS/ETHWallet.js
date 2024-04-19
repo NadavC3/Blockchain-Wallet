@@ -34,10 +34,10 @@ function generateAddresses(seedPhrase) {
     lightwallet.keystore.createVault({
         password: password,
         seedPhrase: seedPhrase
-    }, function(err, keystore) {
-        keystore.keyFromPassword(password, function(err, pwDerivedKey) {
-            if (err) {
-                displayMessage("Error: " + err);
+    }, function(error, keystore) {
+        keystore.keyFromPassword(password, function(error, pwDerivedKey) {
+            if (error) {
+                displayMessage("Error: " + error);
             } else {
                 // Generate new addresses
                 keystore.generateNewAddress(pwDerivedKey, totalAddresses);
@@ -108,10 +108,10 @@ function sendTransaction() {
     lightwallet.keystore.createVault({
         password: password,
         seedPhrase: seedPhrase
-    }, function (err, keystore) {
-        keystore.keyFromPassword(password, function (err, pwDerivedKey) {
-            if (err) {
-                displayMessage("Error: " + err);
+    }, function (error, keystore) {
+        keystore.keyFromPassword(password, function (error, pwDerivedKey) {
+            if (error) {
+                displayMessage("Error: " + error);
             } else {
                 // Generate a new address
                 keystore.generateNewAddress(pwDerivedKey, 1);
@@ -127,7 +127,7 @@ function sendTransaction() {
                     transaction_signer: keystore
                 });
 
-                var web3 = new web3(provider);
+                var web3 = new Web3(provider);
 
                 // Retrieve sender and recipient addresses, and ether value
                 var from = document.getElementById("fromAddress").value;
@@ -141,7 +141,7 @@ function sendTransaction() {
                     gasLimit: '0xC350',
                     gasPrice: '80000000000',
                     value: value,
-                    gas: '20000' // Changed gas value
+                    gas: '21000' 
                 }, function (error, result) {
                     if (error) {
                         displayMessage("Error: " + error);
