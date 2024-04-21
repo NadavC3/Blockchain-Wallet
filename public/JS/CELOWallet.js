@@ -35,7 +35,7 @@ function generateAddresses(seedPhrase) {
                 keystore.generateNewAddress(pwDerivedKey, totalAddresses);
                 var addresses = keystore.getAddresses();
 
-                var web3 = new Web3(new Web3.providers.HttpProvider(' https://polygon-amoy.infura.io/v3/27e5347d75bb43d6b075a8bc998c48a0'));
+                var web3 = new Web3(new Web3.providers.HttpProvider('https://celo-alfajores.infura.io/v3/27e5347d75bb43d6b075a8bc998c48a0'));
 
                 // Construct HTML for addresses
                 var html = "";
@@ -48,7 +48,7 @@ function generateAddresses(seedPhrase) {
                     html += "<li>";
                     html += "<p><b>Address: </b>0x" + address + "</p>";
                     html += "<p><b>Private Key: </b>0x" + privateKey + "</p>";
-                    html += "<p><b>Balance: </b>" + web3.fromWei(balance, "ether") + " MATIC</p>";
+                    html += "<p><b>Balance: </b>" + web3.fromWei(balance, "ether") + " COINS</p>";
                     html += "</li>";
                 }
 
@@ -102,7 +102,7 @@ function sendTransaction() {
 
                 // Initialize web3 provider with keystore transaction signer
                 var provider = new HookedWeb3Provider({
-                    host: "https://polygon-amoy.infura.io/v3/27e5347d75bb43d6b075a8bc998c48a0",
+                    host: "https://celo-alfajores.infura.io/v3/27e5347d75bb43d6b075a8bc998c48a0",
                     transaction_signer: keystore
                 });
 
@@ -134,5 +134,6 @@ function sendTransaction() {
 }
 
 //
+//veteran road swear letter upon crash clip minor ginger elder next cruel
 //garlic fiction spare witness toy burger cry ability trash prize fine later
-//
+
