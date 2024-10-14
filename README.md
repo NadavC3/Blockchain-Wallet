@@ -13,12 +13,14 @@ MultiCurrency HD wallet supports two types of cryptocurrencies:
 
 ### Using the Wallet:
 - **Generate Seed**: Click to generate a mnemonic phrase (seed).
+
 ![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/generate seed.png)
 
 - **Pre-generated Seed**: For demo purposes, use the following mnemonic:  
   `veteran road swear letter upon crash clip minor ginger elder next cruel`
 
 - **Generate Addresses**: Enter your mnemonic phrase and click "Generate Addresses" to view addresses, private keys, and balances.
+
 ![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/generate address.png)
 ![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/num of seeds.png)
 
@@ -27,6 +29,7 @@ MultiCurrency HD wallet supports two types of cryptocurrencies:
 1. Enter the "From Address" and "To Address".
 2. Specify the amount of Ethereum or Celo to send.
 3. Click "Send Transaction" and view the transaction hash.
+
 ![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/send.png)
 
 ### Updating Balances:
