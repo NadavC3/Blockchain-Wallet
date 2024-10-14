@@ -14,15 +14,15 @@ MultiCurrency HD wallet supports two types of cryptocurrencies:
 ### Using the Wallet:
 - **Generate Seed**: Click to generate a mnemonic phrase (seed).
 
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/generate seed.png)
+![Generate Seed Screenshot](Screenshots/generate seed.png)
 
 - **Pre-generated Seed**: For demo purposes, use the following mnemonic:  
   `veteran road swear letter upon crash clip minor ginger elder next cruel`
 
 - **Generate Addresses**: Enter your mnemonic phrase and click "Generate Addresses" to view addresses, private keys, and balances.
 
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/generate address.png)
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/num of seeds.png)
+![Generate Seed Screenshot](Screenshots/generate address.png)
+![Generate Seed Screenshot](Screenshots/num of seeds.png)
 
 
 ### Sending Transactions:
@@ -30,14 +30,14 @@ MultiCurrency HD wallet supports two types of cryptocurrencies:
 2. Specify the amount of Ethereum or Celo to send.
 3. Click "Send Transaction" and view the transaction hash.
 
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/send.png)
+![Generate Seed Screenshot](Screenshots/send.png)
 
 ### Updating Balances:
 Refresh the address balances by clicking "Generate Addresses" again after a transaction.
 
 ### Switching Currency:
 Navigate to the Celo page using the top navigation bar. You can reuse the same mnemonic to generate Celo addresses and send transactions.
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/change currency.png)
+![Generate Seed Screenshot](Screenshots/change currency.png)
 
-![Generate Seed Screenshot](Blockchain-Wallet/Screenshots/celo.png)
+![Generate Seed Screenshot](Screenshots/celo.png)
 
