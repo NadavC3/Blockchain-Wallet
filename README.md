@@ -14,15 +14,15 @@ MultiCurrency HD wallet supports two types of cryptocurrencies:
 ### Using the Wallet:
 - **Generate Seed**: Click to generate a mnemonic phrase (seed).
 
-![Generate Seed Screenshot](Screenshots/generate seed.png)
+![Generate Seed Screenshot](Screenshots/generate_seed.png)
 
 - **Pre-generated Seed**: For demo purposes, use the following mnemonic:  
   `veteran road swear letter upon crash clip minor ginger elder next cruel`
 
 - **Generate Addresses**: Enter your mnemonic phrase and click "Generate Addresses" to view addresses, private keys, and balances.
 
-![Generate Seed Screenshot](Screenshots/generate address.png)
-![Generate Seed Screenshot](Screenshots/num of seeds.png)
+![Generate Seed Screenshot](Screenshots/generate_address.png)
+![Generate Seed Screenshot](Screenshots/num_of_seeds.png)
 
 
 ### Sending Transactions:
@@ -37,7 +37,7 @@ Refresh the address balances by clicking "Generate Addresses" again after a tran
 
 ### Switching Currency:
 Navigate to the Celo page using the top navigation bar. You can reuse the same mnemonic to generate Celo addresses and send transactions.
-![Generate Seed Screenshot](Screenshots/change currency.png)
+![Generate Seed Screenshot](Screenshots/change_currency.png)
 
 ![Generate Seed Screenshot](Screenshots/celo.png)
 
